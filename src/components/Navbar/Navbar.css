@@ -1,0 +1,52 @@
+/*
+=======================
+Navbar Start
+========================
+*/
+
+.navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding: 10px 14px;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 100;
+  /* margin-left: 280px; */
+  top: 0;
+  left: 0px;
+  right: 280px;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0 3);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0 3);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0 3);
+}
+.navbar_left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar_hamburger {
+  display: none;
+}
+.navbar_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #1f1f1f;
+}
+@media screen and (max-width: 991px) {
+  .navbar_hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar{
+    position: fixed;
+  }
+}
+/*
+=======================
+Navbar End
+========================
+*/

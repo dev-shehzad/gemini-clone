@@ -1,0 +1,47 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(92, 87, 87);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 100000;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.tooltip-container:hover .tooltip-content {
+  visibility: visible;
+}
+
+.tooltip-top {
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px; /* Half the width of the tooltip */
+}
+
+.tooltip-right {
+  top: 50%;
+  left: 150%;
+  margin-top: -30px; /* Half the height of the tooltip */
+}
+
+.tooltip-bottom {
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip-left {
+  top: 50%;
+  right: 100%;
+  margin-top: -30px;
+}

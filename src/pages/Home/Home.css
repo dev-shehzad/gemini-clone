@@ -1,0 +1,19 @@
+.home_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.home_main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 280px;
+}
+.home_main.sidebar_collapse {
+  margin-left: 80px;
+}
+@media screen and (max-width: 991px) {
+  .home_main {
+    margin-left: 0;
+  }
+}
